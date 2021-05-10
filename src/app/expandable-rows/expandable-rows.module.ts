@@ -1,13 +1,25 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+
 import { ExpandableRowsComponent } from './expandable-rows.component';
+import { TableHeadingComponent } from './tableHeading.component';
+import { HostsModule } from './hosts/hosts.module';
 
 @NgModule({
   declarations: [
-    ExpandableRowsComponent
+    ExpandableRowsComponent,
+    TableHeadingComponent
   ],
   imports: [
-    CommonModule
+    BrowserModule, 
+    FormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    HostsModule
   ],
   exports: [
     ExpandableRowsComponent
