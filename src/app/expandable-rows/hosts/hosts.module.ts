@@ -1,23 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HostsComponent } from './hosts.component';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 
-import { NameComponent } from './name.component';
+
+import { HostsComponent } from './hosts.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { MultiSelectComponent } from 'ng-multiselect-dropdown';
 
 @NgModule({
   declarations: [
-    HostsComponent,
-    NameComponent
+    HostsComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     BrowserModule,
-    FormsModule
+    MultiSelectComponent
   ],
   exports: [
     HostsComponent
   ]
 })
-export class HostsModule { }
+export class HostsModule {}

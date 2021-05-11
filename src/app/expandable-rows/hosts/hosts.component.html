@@ -1,9 +1,36 @@
-<ng-multiselect-dropdown
-  [placeholder]="'custom placeholder'"
-  [settings]="dropdownSettings"
-  [data]="dropdownList"
-  [(ngModel)]="selectedItems"
-  (onSelect)="onItemSelect($event)"
-  (onSelectAll)="onSelectAll($event)"
->
-</ng-multiselect-dropdown>
+<div class="panel panel-primary">
+    <div class="panel-heading"> 
+     
+    </div>
+    <div class="panel-body">
+  
+  
+      <div class="table-responsive">
+        <table class="table table-striped" *ngIf='users && users.length'>
+          <thead>
+            <tr>
+  
+              <th>Dropdown</th>
+           
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let user of users; let in = index">
+  
+             
+              <td>               
+                <angular2-multiselect  name="dropdown-{{user.id}}" [data]="dropdownList" [(ngModel)]="selectedItems[user.id]" 
+                    [settings]="dropdownSettings" 
+                    (onSelect)="onItemSelect(user.id)" 
+                    (onDeSelect)="OnItemDeSelect(user.id)"
+                    (onSelectAll)="onSelectAll(user.id)"
+                    (onDeSelectAll)="onDeSelectAll(user.id)" disabled></angular2-multiselect>
+              </td>
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+  </div>
