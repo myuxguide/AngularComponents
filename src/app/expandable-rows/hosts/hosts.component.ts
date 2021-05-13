@@ -8,41 +8,32 @@ import { HostsInterface } from './hosts.interface';
 })
 
 export class HostsComponent {
-
   name = 'Angular 5';
   dropdownList : HostsInterface[] = [];
-  //  selectedItems: Map<string, Array<any>>;
    selectedItems: HostsInterface[] = []; 
    dropdownSettings = {};
-  users=[{id:1},{id:2},{id:3},{id:4}];
+  users=[{id:1}];
 
    ngOnInit(){
       // this.selectedItems = new Map<string, Array<any>>();
         this.users
           this.dropdownList = [
-              {"id":1,"itemName":"India"},
-              {"id":2,"itemName":"Singapore"},
-              {"id":3,"itemName":"Australia"},
-              {"id":4,"itemName":"Canada"}  
+              {"id":1,"itemName":"Host 1"},
+              {"id":2,"itemName":"Host 2"},
+              {"id":3,"itemName":"Host 3"},
+              {"id":4,"itemName":"Host 4"}  
             ];
-
-        //  this.selectedItems["1"] =  [
-        //      {"id":2,"itemName":"Singapore"},
-        //      {"id":3,"itemName":"Australia"}
-        //  ];
-
-
 
         this.dropdownSettings = { 
           singleSelection: false, 
-          text:"Select Countries",
+          text:"Select Hosts",
           selectAllText:'Select All',
           unSelectAllText:'UnSelect All',
           enableSearchFilter: true,
           classes:"myclass custom-class"
         };  
 
-        console.log(this.selectedItems)          
+        console.log(this.selectedItems)        
    }
 
       onItemSelect(item:any){
@@ -60,5 +51,7 @@ export class HostsComponent {
        console.log(items);
    }
 
-
+   SelectedHosts(items: any){
+    this.selectedItems
+   }
 }

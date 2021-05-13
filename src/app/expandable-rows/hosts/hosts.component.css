@@ -1,0 +1,6 @@
+.selectBox{
+    border: 1px solid #f2f2f2;
+    box-shadow: 0 0 1em #999;
+    padding: 1em 2em;
+    min-width: 500px;
+}

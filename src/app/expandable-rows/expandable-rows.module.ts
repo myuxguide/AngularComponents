@@ -7,19 +7,23 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { ExpandableRowsComponent } from './expandable-rows.component';
 import { TableHeadingComponent } from './tableHeading.component';
-import { HostsModule } from './hosts/hosts.module';
+import { HostsComponent } from './hosts/hosts.component';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+import { AddBatchComponent } from './add-batch/add-batch.component';
 
 @NgModule({
   declarations: [
     ExpandableRowsComponent,
-    TableHeadingComponent
+    TableHeadingComponent,
+    HostsComponent,
+    AddBatchComponent
   ],
   imports: [
     BrowserModule, 
     FormsModule,
     MatTableModule,
     MatPaginatorModule,
-    HostsModule
+    AngularMultiSelectModule
   ],
   exports: [
     ExpandableRowsComponent
