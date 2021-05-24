@@ -12,11 +12,11 @@ export class HostsComponent {
   dropdownList : HostsInterface[] = [];
    selectedItems: HostsInterface[] = []; 
    dropdownSettings = {};
-  users=[{id:1}];
+  hosts=[{id:1}];
 
    ngOnInit(){
       // this.selectedItems = new Map<string, Array<any>>();
-        this.users
+        this.hosts
           this.dropdownList = [
               {"id":1,"itemName":"Host 1"},
               {"id":2,"itemName":"Host 2"},
@@ -27,7 +27,7 @@ export class HostsComponent {
         this.dropdownSettings = { 
           singleSelection: false, 
           text:"Select Hosts",
-          selectAllText:'Select All',
+          selectAllText:'Select All Hosts',
           unSelectAllText:'UnSelect All',
           enableSearchFilter: true,
           classes:"myclass custom-class"
@@ -36,10 +36,10 @@ export class HostsComponent {
         console.log(this.selectedItems)        
    }
 
-      onItemSelect(item:any){
+    onItemSelect(item:any){
       console.log(item["itemName"]);
       console.log(this.selectedItems);
-   }
+    }
    OnItemDeSelect(item:any){
        console.log(item);
        console.log(this.selectedItems);

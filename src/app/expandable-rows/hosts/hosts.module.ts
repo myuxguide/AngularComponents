@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-
 import { HostsComponent } from './hosts.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
@@ -9,13 +8,13 @@ import { MultiSelectComponent } from 'ng-multiselect-dropdown';
 
 @NgModule({
   declarations: [
-    HostsComponent
+    HostsComponent,
+    MultiSelectComponent
   ],
   imports: [
     CommonModule,
     FormsModule,
-    BrowserModule,
-    MultiSelectComponent
+    BrowserModule
   ],
   exports: [
     HostsComponent

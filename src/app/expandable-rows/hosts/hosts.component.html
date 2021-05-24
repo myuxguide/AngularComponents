@@ -1,9 +1,9 @@
 <div class="selectBox container">
     <h2>Select Hosts</h2>
-    <angular2-multiselect *ngFor="let user of users" name="dropdown-{{user.id}}" [data]="dropdownList" [(ngModel)]="selectedItems[user.id]" 
+    <angular2-multiselect *ngFor="let host of hosts" name="dropdown-{{host.id}}" [data]="dropdownList" [(ngModel)]="selectedItems[host.id]" 
         [settings]="dropdownSettings" 
-        (onSelect)="onItemSelect(user.id)" 
-        (onDeSelect)="OnItemDeSelect(user.id)"
-        (onSelectAll)="onSelectAll(user.id)"
-        (onDeSelectAll)="onDeSelectAll(user.id)" disabled></angular2-multiselect>
+        (onSelect)="onItemSelect(host.id)" 
+        (onDeSelect)="OnItemDeSelect(host.id)"
+        (onSelectAll)="onSelectAll(host.id)"
+        (onDeSelectAll)="onDeSelectAll(host.id)" disabled></angular2-multiselect>
 </div>
