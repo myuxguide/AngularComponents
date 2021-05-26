@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExpandableRowsModule } from './expandable-rows/expandable-rows.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+// import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 
 @NgModule({
   declarations: [
@@ -20,8 +20,7 @@ import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
     ExpandableRowsModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatPaginatorModule,
-    AngularMultiSelectModule
+    MatPaginatorModule
   ],
   exports: [   
   ],
