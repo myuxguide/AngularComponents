@@ -7,18 +7,17 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExpandableRowsModule } from './expandable-rows/expandable-rows.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
+import { DemoFOlderComponent } from './demo-folder/demo-folder.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DemoFOlderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ExpandableRowsModule,
-    BrowserAnimationsModule,
     MatTableModule,
     MatPaginatorModule
   ],
