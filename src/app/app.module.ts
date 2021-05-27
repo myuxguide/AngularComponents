@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExpandableRowsModule } from './expandable-rows/expandable-rows.module';
 import { NitinComponent } from './nitin/nitin.component';
+import { TejasviComponent } from './tejasvi/tejasvi.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NitinComponent
+    NitinComponent,
+    TejasviComponent
   ],
   imports: [
     BrowserModule,
